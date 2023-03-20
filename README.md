@@ -102,50 +102,6 @@ knowledgable Android developers if they want to merge and keep current the
 required support (most likely just instructions about how to compile and make
 a modification or two to the Makefile).
 
-### Compatible Devices
-
-* [ALFA AWUS036AC](https://store.rokland.com/collections/wi-fi-usb-adapters/products/alfa-awus036ac-802-11ac-long-range-dual-band-wifi-usb-adapter)
-* [ALFA AWUS036ACH](https://store.rokland.com/collections/wi-fi-usb-adapters/products/alfa-awus036ach-802-11ac-high-power-ac1200-dual-band-wifi-usb-adapter)
-* [ALFA AWUS036EAC](https://store.rokland.com/collections/wi-fi-usb-adapters/products/alfa-awus036eac-802-11ac-ac1200-dual-band-wifi-usb-adapter-dongle)
-* ASUS USB-AC56 Dual-Band AC1200 Adapter (H/W ver. A1)
-* Belkin F9L1109
-* Buffalo - WI-U3-866D
-* [Edimax EW-7822UAC](https://www.amazon.com/Edimax-EW-7822UAC-Dual-Band-Adjustable-Performance/dp/B00BXAXO7C) - Edimax made the source for this driver available.
-* Linksys WUSB6300 V1
-* Rosewill RNX-AC1200UBE
-* TRENDnet TEW-805UB
-* Numerous adapters that are based on the supported chipset.
-
-Note: If you are looking for information about what adapter to buy,
-click [here](https://github.com/morrownr/USB-WiFi) and look for Main Menu
-item 2 which will show information about and links to recommended adapters.
-
-### Installation Information
-
-Warning: Installing multiple out-of-kernel drivers for the same hardware
-usually does not end well. The install-driver.sh script has the capability
-to detect and remove many conflicting drivers but not all. If this driver
-does not work well after installation and you have previously installed a
-driver that you did not remove, it suggested that you run the following
-command in an effort to determine if you need to take action to manually
-remove conflicting drivers:
-
-```
-sudo dkms status
-```
-
-Warning: If you decide to do a distro upgrade, which will likely install a
-new version of kernel such as 5.15 to 6.1, you need to upgrade this driver
-with the newest available before performing the disto upgrade. Use the
-following commands in the driver directory:
-
-```
-git pull
-```
-
-```
-sudo ./install-driver.sh
-```
 
 Temporary internet access is required for installation. There are numerous ways
 to enable temporary internet access depending on your hardware and situation.
